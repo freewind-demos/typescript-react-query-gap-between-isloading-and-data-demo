@@ -1,7 +1,7 @@
-TypeScript "react-query" Demo
+TypeScript "react-query" Gap Between "isLoading" and "data" Demo
 =================================
 
-react-query默认进行3次retry，如果不想要，可以把`retry`设为false
+react-query的`isLoading`与`data`变化之间是否存在空隙，会导致我们拿到`data`为undefined时，无法判断是因为数据还没拿到，还是数据本身是undefined?
 
 ```
 npm install
